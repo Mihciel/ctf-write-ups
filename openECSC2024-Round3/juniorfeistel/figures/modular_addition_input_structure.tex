@@ -1,0 +1,11 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+
+\begin{document}
+\begin{tikzcd}[row sep=2.5em]
+&x+7a \arrow[r,"+a", red] \arrow[rrd,"+2a" below, green]& x \arrow[dr,"+a", red] \arrow[rdd, green] \arrow[lddd,"+4a" near start, blue]&\\
+x+6a \arrow[ur,"+a", red] \arrow[rru, green]& & &x+a \arrow[d,"+a", red] \arrow[ddl, green] \arrow[llld,"+4a" near end, blue]\\
+x+5a \arrow[u,"+a", red] \arrow[uur, green]& & &x+2a \arrow[dl,"+a", red] \arrow[dll, green] \arrow[lllu,"+4a" near start, blue]\\
+&x+4a \arrow[lu,"+a", red] \arrow[uul, green]& x+3a \arrow[l,"+a", red]\arrow[ull,"+2a" above, green] \arrow[luuu,"+4a" near end, blue]&
+\end{tikzcd}
+\end{document}

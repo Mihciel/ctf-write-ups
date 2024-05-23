@@ -1,0 +1,13 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+
+\begin{document}
+\begin{tikzcd}[row sep=2.5em]
+x \arrow[rr,"+a"] \arrow[dr,swap,"+b"] \arrow[dd,swap,"+c"] &&
+  x+a \arrow[dd,swap,"+c" near start] \arrow[dr,"+b"] \\
+& x+b \arrow[rr,crossing over,"+a" near start] &&
+  x+a+b \arrow[dd,"+c"] \\
+x+c \arrow[rr,"+a" near end] \arrow[dr,swap,"+b"] && x+a+c \arrow[dr,swap,"+b"] \\
+& x+b+c \arrow[rr,"+a"] \arrow[uu,<-,crossing over,"+c" near end]&& x+a+b+c
+\end{tikzcd}
+\end{document}
